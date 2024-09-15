@@ -19,7 +19,7 @@ export default async function IndexPage() {
             action={async () => {
               "use server";
               await logout();
-              redirect("/");
+              redirect("/login");
             }}
           >
             <button className={styles.button} type="submit">
